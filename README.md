@@ -6,7 +6,7 @@ This little project allows you to easily create uniques id for users and other t
 ### Import:
 ###### node.js:
 ```javascript
-const SimpleCornFlakes = require("./libs/SimpleCornFlakes.js");
+const CornFlake = require("./libs/SimpleCornFlakes.js");
 ```
 ([npm](https://www.npmjs.com/) import for node.js not avalible for the moment)
 
@@ -18,7 +18,7 @@ var users = {};
 
 // Create a new CornFlake:
 // SimpleCornFlakes(array[of cornflakes] = [], idCharsSize = 16)
-var userId = SimpleCornFlakes(Object.keys(users), 16); // We use 'Object.keys' to create an array from an object
+var userId = CornFlake(Object.keys(users), 16); // We use 'Object.keys' to create an array from an object
 
 // Then we can do anything with it, like storing data and stuff:
 users[userId] = {
