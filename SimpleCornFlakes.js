@@ -9,7 +9,7 @@ function genkey(keysize = 16, chars = preChars) {
 }
 
 var scf = (existing_arr = [], keysize = 16, chars = preChars) => {
-    var cornflake = genkey(keysize);
+    var cornflake = genkey(keysize, chars);
     if (existing_arr != undefined) {
         while (existing_arr.hasOwnProperty(cornflake)) {
             cornflake = genkey(keysize, chars);
