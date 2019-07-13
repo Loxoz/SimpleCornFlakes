@@ -7,7 +7,7 @@
 	"scripts": {
 		"test": "jest --watch",
 		"lint": "eslint .",
-		"test-travis": "nyc --reporter=text npm test",
+		"test-install": "npm i -g jest",
 		"test-self": "node_modules/.bin/jest --watch",
 		"start": "echo This is a library and not an executable javascript file, please refer to https://github.com/Loxoz/SimpleCornFlakes for more infos."
 	},
