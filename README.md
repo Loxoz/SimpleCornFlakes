@@ -1,5 +1,7 @@
 # SimpleCornFlakes
 
+[![Build Status](https://travis-ci.com/Loxoz/SimpleCornFlakes.svg?branch=master)](https://travis-ci.com/Loxoz/SimpleCornFlakes)
+
 Create random keys/ids for each user/objects... without duplicated keys/ids like discord do
 
 ### Import:
