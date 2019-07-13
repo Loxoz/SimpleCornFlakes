@@ -5,11 +5,11 @@
 	"main": "SimpleCornFlakes.js",
 	"author": "Loxoz",
 	"scripts": {
-		"test": "jest --watch",
+		"test": "jest",
+		"test:install": "npm i -g jest",
+		"test:watch": "jest --watch",
 		"lint": "eslint .",
-		"test-install": "npm i -g jest",
-		"test-self": "node_modules/.bin/jest --watch",
-		"start": "echo This is a library and not an executable javascript file, please refer to https://github.com/Loxoz/SimpleCornFlakes for more infos."
+		"lint:install": "npm i -g eslint"
 	},
 	"dependencies": {},
 	"optionalDependencies": {},
@@ -31,6 +31,7 @@
 		"SimpleCornFlakes.js"
 	],
 	"devDependencies": {
+		"eslint": "^6.0.1",
 		"jest": "^24.8.0"
 	}
 }

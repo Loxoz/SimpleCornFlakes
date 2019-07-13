@@ -1,24 +1,23 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
-  - "1.8"
-  - "2.5"
-  - "3.3"
-  - "4.9"
-  - "5.12"
   - "6.17"
   - "7.10"
   - "8.16"
   - "9.11"
   - "10.15"
-  - "11.14"
+  - "11.16"
 sudo: false
 dist: trusty
 cache:
   directories:
     - node_modules
+before_install:
+  - npm update
+install:
+  - npm install
 before_script:
-  - npm run test-install
+  - npm run test:install
+  - npm run lint:install
 script:
   - npm test
+  - npm run lint
