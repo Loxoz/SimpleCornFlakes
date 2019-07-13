@@ -1,4 +1,4 @@
-var preChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'.split('');
+var preChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 function genkey(keysize = 16, chars = preChars) {
     var key = '';
@@ -15,15 +15,32 @@ function genkey(keysize = 16, chars = preChars) {
  * 
  *     CornFlake([], 16);
  * 
- * @param {object} existing_arr
+ * @param {object} keysarray
  * @param {number} keysize
  * @param {object} preChars
  * @return {string}
  */
-var scf = (existing_arr = [], keysize = 16, chars = preChars) => {
+var scf = (keysarray = [], keysize = 16, chars = preChars) => {
+    if (typeof keysarray != "object") {
+        throw new Error("provided keysarray is not an Array neither an Object");
+    }
+    keysize = parseInt(keysize)
+    if (isNaN(keysize)) {
+        throw new Error("provided keysize is not an Integer");
+    }
+    if (!Array.isArray(keysarray)) {
+        keysarray = Object.keys(keysarray);
+    }
+    if (typeof chars == "string") {
+        chars = chars.split("");
+    }
+    if (!Array.isArray(chars)) {
+        throw new Error("provided chars is not an Array neither a String");
+    }
+
     var cornflake = genkey(keysize, chars);
-    if (existing_arr != undefined) {
-        while (existing_arr.hasOwnProperty(cornflake)) {
+    if (keysarray != undefined) {
+        while (keysarray.hasOwnProperty(cornflake)) {
             cornflake = genkey(keysize, chars);
         }
     }
