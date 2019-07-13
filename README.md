@@ -1,12 +1,13 @@
 # SimpleCornFlakes
-> Langs: `EN` [FR](README_FR.md)
-### Description:
-This little project allows you to easily create uniques id for users and other things like discord do!
+
+Create random keys/ids for each user/objects... without duplicated keys/ids like discord do
 
 ### Import:
-###### node.js:
+##### node.js:
 ```javascript
 const CornFlake = require("./libs/SimpleCornFlakes.js");
+/* or (from npm) */
+const CornFlake = require("simplecornflakes");
 ```
 ([npm](https://www.npmjs.com/) import for node.js not avalible for the moment)
 
@@ -22,14 +23,11 @@ var userId = CornFlake(Object.keys(users), 16); // We use 'Object.keys' to creat
 
 // Then we can do anything with it, like storing data and stuff:
 users[userId] = {
-  "some": "data",
-  "name": "guest"
+  some: "data",
+  name: "guest"
 }
 
 // This is easy as that!
 ```
-
-### Documentation
-~~[here is the documentation](https://github.com/Loxoz/SimpleCornFlakes/wiki)~~ (not avalible for the moment)
 
 > #### Hope you'll enjoy my work ❤️ leave a ⭐️ if you found it useful to support me

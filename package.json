@@ -1,15 +1,36 @@
 {
 	"name": "simplecornflakes",
-	"description": "Create random ids for each user without duplicated ids like discord do",
+	"version": "1.1.0",
+	"description": "Create random keys/ids for each user/objects... without duplicated keys/ids like discord do",
 	"main": "SimpleCornFlakes.js",
 	"author": "Loxoz",
 	"scripts": {
+		"test": "jest --watch",
+		"lint": "eslint .",
+		"test-travis": "nyc --reporter=text npm test",
+		"test-self": "node_modules/.bin/jest --watch",
 		"start": "echo This is a library and not an executable javascript file, please refer to https://github.com/Loxoz/SimpleCornFlakes for more infos."
 	},
 	"dependencies": {},
 	"optionalDependencies": {},
+	"keywords": [
+		"cornflakes",
+		"simple",
+		"node",
+		"smart",
+		"random",
+		"id",
+		"generator"
+	],
 	"bugs": {
 		"url": "https://github.com/Loxoz/SimpleCornFlakes/issues"
 	},
-	"homepage": "https://github.com/Loxoz/SimpleCornFlakes"
+	"homepage": "https://github.com/Loxoz/SimpleCornFlakes",
+	"files": [
+		"LICENSE",
+		"SimpleCornFlakes.js"
+	],
+	"devDependencies": {
+		"jest": "^24.8.0"
+	}
 }

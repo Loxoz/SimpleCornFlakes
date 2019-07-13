@@ -8,6 +8,18 @@ function genkey(keysize = 16, chars = preChars) {
     return key;
 }
 
+/**
+ * Create new CornFlake (random key/id)
+ *
+ *  Examples:
+ * 
+ *     CornFlake([], 16);
+ * 
+ * @param {object} existing_arr
+ * @param {number} keysize
+ * @param {object} preChars
+ * @return {string}
+ */
 var scf = (existing_arr = [], keysize = 16, chars = preChars) => {
     var cornflake = genkey(keysize, chars);
     if (existing_arr != undefined) {
@@ -19,3 +31,4 @@ var scf = (existing_arr = [], keysize = 16, chars = preChars) => {
 };
 
 module.exports = scf;
+module.exports.defaultChars = preChars;
