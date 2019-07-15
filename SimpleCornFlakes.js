@@ -15,10 +15,10 @@ function genkey(keysize = 16, chars = preChars) {
  * 
  *     CornFlake([], 16);
  * 
- * @param {object} keysarray
- * @param {number} keysize
- * @param {object} preChars
- * @return {string}
+ * @param {object} [keysarray] Array or Object of the existing keys
+ * @param {number} [keysize] Size/Length of the key
+ * @param {object} [chars] Array or String of chars to use to generate the key
+ * @return {String} Generated key string
  */
 var scf = (keysarray = [], keysize = 16, chars = preChars) => {
     if (typeof keysarray != "object") {

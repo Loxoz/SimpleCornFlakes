@@ -3,15 +3,14 @@
 Create random keys/ids for each user/objects... without duplicated keys/ids like discord do
 
 [![Build Status](https://travis-ci.com/Loxoz/SimpleCornFlakes.svg?branch=master)](https://travis-ci.com/Loxoz/SimpleCornFlakes)
+[![NPM version](https://img.shields.io/npm/v/simplecornflakes.svg)](https://npmjs.org/package/simplecornflakes)
 
 ### Import:
-##### node.js:
 ```javascript
-const CornFlake = require("./libs/SimpleCornFlakes.js");
-/* or (from npm) */
 const CornFlake = require("simplecornflakes");
+/* as standalone in your ./libs folder (download from github) */
+const CornFlake = require("./libs/SimpleCornFlakes.js");
 ```
-#### public packages: [npm](https://www.npmjs.com/package/simplecornflakes) or [github](https://www.github.com/Loxoz/SimpleCornFlakes)
 
 ### Example & Tutorial:
 ```javascript
@@ -26,7 +25,7 @@ var users = {};
  * Create a new CornFlake:
  * syntax: ({type} name = default value)
  *  SimpleCornFlakes(
- *   {Array,Object}} keysarray = [],
+ *   {Array,Object} keysarray = [],
  *   {Integer} keySize = 16,
  *   {Array,String} chars = this.defaultChars
  *  )

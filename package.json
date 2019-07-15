@@ -1,6 +1,6 @@
 {
 	"name": "simplecornflakes",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Create random keys/ids for each user/objects... without duplicated keys/ids like discord do",
 	"main": "SimpleCornFlakes.js",
 	"author": "Loxoz",
