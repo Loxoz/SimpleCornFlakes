@@ -1,5 +1,4 @@
 const { CornFlake } = require('../..');
-const containOnly = require('../utils/containOnly');
 
 function runCode() {
     /** Using the filter option **/

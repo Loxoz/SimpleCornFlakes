@@ -16,6 +16,10 @@ module.exports = {
     "rules": {
         "no-console": "warn",
         "no-unused-vars": "warn",
-        "no-inner-declarations": "off"
-    }
+        "no-inner-declarations": "off",
+        "no-mixed-spaces-and-tabs": "warn"
+    },
+    "ignorePatterns": [
+        "dist/*"
+    ]
 };
