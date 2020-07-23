@@ -1,37 +1,45 @@
 {
-	"name": "simplecornflakes",
-	"version": "1.1.2",
-	"description": "Create random keys/ids for each user/objects... without duplicated keys/ids like discord do",
-	"main": "SimpleCornFlakes.js",
-	"author": "Loxoz",
-	"scripts": {
-		"test": "jest",
-		"test:install": "npm i -g jest",
-		"test:watch": "jest --watch",
-		"lint": "eslint .",
-		"lint:install": "npm i -g eslint"
-	},
-	"dependencies": {},
-	"optionalDependencies": {},
-	"keywords": [
-		"cornflakes",
-		"simple",
-		"node",
-		"smart",
-		"random",
-		"id",
-		"generator"
-	],
-	"bugs": {
-		"url": "https://github.com/Loxoz/SimpleCornFlakes/issues"
-	},
-	"homepage": "https://github.com/Loxoz/SimpleCornFlakes",
-	"files": [
-		"LICENSE",
-		"SimpleCornFlakes.js"
-	],
-	"devDependencies": {
-		"eslint": "^6.0.1",
-		"jest": "^24.8.0"
-	}
+  "name": "simplecornflakes",
+  "version": "1.2.0",
+  "description": "Helps creating unique keys/ids for users or else, inspired by discord cornflakes",
+  "main": "src/SimpleCornFlakes.js",
+  "module": "src/SimpleCornFlakes.js",
+  "unpkg": "dist/SimpleCornFlakes.js",
+  "jsdelivr": "dist/SimpleCornFlakes.js",
+  "author": "Loxoz",
+  "scripts": {
+    "test": "jest",
+    "test:install": "npm i -g jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:install": "npm i -g eslint",
+    "build": "node scripts/build.js"
+  },
+  "keywords": [
+    "cornflakes",
+    "node",
+    "smart",
+    "random",
+    "id",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/Loxoz/SimpleCornFlakes/issues"
+  },
+  "homepage": "https://github.com/Loxoz/SimpleCornFlakes",
+  "files": [
+    "LICENSE",
+    "src/",
+    "dist/"
+  ],
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "rollup": "^2.22.2",
+    "terser": "^4.8.0"
+  }
 }

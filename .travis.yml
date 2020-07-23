@@ -1,10 +1,11 @@
 language: node_js
 node_js:
   # Note that eslint >=6 only support node >=8
-  - "8.16"
-  - "9.11"
-  - "10.15"
-  - "11.15"
+  - 8
+  - 10
+  - 12
+  - 13
+  - 14
 sudo: false
 cache:
   directories:
@@ -12,7 +13,7 @@ cache:
 before_install:
   - npm update
 install:
-  - npm install
+  - npm i
 before_script:
   - npm run test:install
   - npm run lint:install
