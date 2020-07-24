@@ -66,7 +66,7 @@ other_id = CornFlake({ chars: "ABCD", keysize: 4 });
  */
 ```
 ```js
-/** using keysize as function **/
+/** Using keysize as function **/
 let min_size = 8;
 let max_size = 16;
 let random__key = CornFlake({
@@ -89,7 +89,7 @@ let filtered_id = CornFlake({
  */
 ```
 
-**Note:** examples were tested, see tests for those example [here](https://github.com/Loxoz/SimpleCornFlakes/tree/master/test)
+**Note:** examples were tested, see tests for those example [here](https://github.com/Loxoz/SimpleCornFlakes/tree/master/test/examples)
 
 ## Options
 
@@ -103,12 +103,16 @@ let filtered_id = CornFlake({
 
 see files in `test/` [here on github](https://github.com/Loxoz/SimpleCornFlakes/tree/master/test) for more usecases.
 
+# Contributing
+
+see [CONTRIBUTING.md](https://github.com/Loxoz/SimpleCornFlakes/tree/master/CONTRIBUTING.md)
+
 ## Issues
 
 Please open an issue on [Github Issues](https://github.com/Loxoz/SimpleCornFlakes/issues), or consider contributing to the project.
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT)
+[MIT licensed](http://opensource.org/licenses/MIT).
 
-> ⭐️ Star us on [github](https://github.com/Loxoz/SimpleCornFlakes) ☕
+> Give me a ⭐️ Star on [github](https://github.com/Loxoz/SimpleCornFlakes) ☕
